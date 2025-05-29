@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: local_user
+      POSTGRES_DB: local_db
+      POSTGRES_HOST_AUTH_METHOD: trust
+    command: ['postgres', '-c', 'log_statement=all']
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
