@@ -1,0 +1,12 @@
+{
+  "common": {
+    "logo": {
+      "alt": "Logo de mon petit ping-pong, une raquette bleue souriante au dessus de la typographie Mon petit ping pong",
+      "baseline": "Petits duels entre amis !"
+    }
+  },
+  "auth": {
+    "signin": "Connexion",
+    "signup": "Inscription"
+  }
+}
