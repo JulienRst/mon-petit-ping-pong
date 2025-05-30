@@ -1,9 +1,8 @@
-import type { PropsWithChildren } from "react";
-import { useNavigate } from "react-router";
+import { Outlet, useNavigate } from "react-router";
 import { Button } from "~/components/ui/button";
-import LogoInline from "app/images/logo_inline.png";
+import LogoInline from "app/assets/images/logo_inline.png";
 
-export default function authLayout({ children }: PropsWithChildren) {
+export default function authLayout() {
   const navigate = useNavigate();
 
   return (
@@ -21,7 +20,9 @@ export default function authLayout({ children }: PropsWithChildren) {
         src={LogoInline}
         alt="Mon petit Ping-Pong!"
       />
-      <div className="grow">{children}</div>
+      <div className="flex grow flex-col">
+        <Outlet />
+      </div>
     </div>
   );
 }

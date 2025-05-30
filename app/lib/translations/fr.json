@@ -6,7 +6,21 @@
     }
   },
   "auth": {
-    "signin": "Connexion",
-    "signup": "Inscription"
+    "signin": {
+      "label": "Connexion"
+    },
+    "signup": {
+      "label": "Inscription",
+      "profile": {
+        "title": "Mon profil",
+        "form": {
+          "firstname": "Prénom",
+          "lastname": "Nom",
+          "email": "Adresse mail",
+          "password": "Mot de passe",
+          "submit": "Confirmer"
+        }
+      }
+    }
   }
 }

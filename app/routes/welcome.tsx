@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Logo from "app/images/logo.png";
+import Logo from "app/assets/images/logo.png";
 import { Button } from "~/components/ui/button";
 import { Link } from "react-router";
 
@@ -14,13 +14,13 @@ export default function Welcome() {
       />
       <p className="text-center">{t("common.logo.baseline")}</p>
       <div className="flex flex-col gap-6">
-        <Link className="block" to="/signin">
+        <Link className="block" to="/signup">
           <Button className="w-full" size="lg">
-            {t("auth.signup")}
+            {t("auth.signup.label")}
           </Button>
         </Link>
         <Button size="lg" variant="secondary">
-          {t("auth.signin")}
+          {t("auth.signin.label")}
         </Button>
       </div>
     </div>

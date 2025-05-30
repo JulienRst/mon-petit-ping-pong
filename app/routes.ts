@@ -7,5 +7,6 @@ import {
 
 export default [
   index("routes/welcome.tsx"),
-  layout("routes/auth/layout.tsx", [route("signin", "routes/auth/signin.tsx")]),
+  layout("routes/auth/layout.tsx", [route("signup", "routes/auth/signup.tsx")]),
+  route("api/auth/*", "routes/api.auth.$.ts"),
 ] satisfies RouteConfig;

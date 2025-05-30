@@ -1,11 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "./assets/fonts/stylesheet.css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-title: "Baggy";
 }
 
 html,
@@ -59,7 +62,7 @@ body {
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary:rgba(83, 152, 247, 1);
+  --primary: rgba(83, 152, 247, 1);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: black;
   --secondary-foreground: white;
